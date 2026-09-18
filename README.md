@@ -15,12 +15,24 @@
 
 | 数据集划分 | 图片数量 |
 | --- | --- |
-| train | 5,307 |
+| train | 5,307(+ 805 张负样本背景图,见下方) |
 | valid | 270 |
 | test | 81 |
 
 - 许可证:**CC BY 4.0**(需保留原作者署名),原始来源见上方链接。
 - **已知局限**:类别分布严重不均衡,`Person` 占绝大多数标注,而 `Vape` 仅有 25 个标注框,样本量过少,模型大概率无法学到该类别的有效特征,训练/评估时应重点关注 `Cigarette`、`Person`、`Smoke` 三类的表现,`Vape` 的检测结果仅供参考。
+
+### 负样本增强(压低误判率)
+
+原始数据集几乎全是"确实在吸烟"的正样本,缺少"长得像吸烟但其实不是"的负样本(比如近景自拍、打电话、抬手比划)。实测发现这会导致模型在这类场景里把眼睛、手机、手指误判成 `Cigarette`(详见下方"误判测试"一节)。
+
+解决办法是把 Kaggle 上的 [`Smoking vs Not Smoking`](https://www.kaggle.com/datasets/sujaykapadnis/smoking) 数据集里 `training_data/notsmoking`(805 张,人物但不吸烟)作为**无标注背景图**加进训练集,教模型不要在这类图上出框。`validation_data/notsmoking`(200 张)特意不加入训练,留作误判率的长期回归测试集。
+
+```bash
+python tools/add_negative_samples.py
+```
+
+该脚本是幂等的(已存在的文件会跳过),把图片复制进 `Smoking_person.v3i.yolo26/train/images/`,并在 `train/labels/` 下为每张图创建一个空的 `.txt`(YOLO 里空标注 = 背景图,没有需要检测的目标)。
 
 ### 获取数据集
 
@@ -40,6 +52,8 @@ yolo26_smoking_person_detect/
         ├── images/
         └── labels/
 ```
+
+同样出于体积考虑,用于负样本增强的 [`smokingVSnotsmoking`](https://www.kaggle.com/datasets/sujaykapadnis/smoking) 数据集也未纳入版本控制。如果要复现负样本增强(见上文),下载后解压到仓库根目录,保持 `smokingVSnotsmoking/training_data/notsmoking`、`smokingVSnotsmoking/validation_data/{smoking,notsmoking}` 这样的目录结构,再运行 `tools/add_negative_samples.py`。
 
 ## 环境要求
 
@@ -82,18 +96,47 @@ python train.py --epochs 150 --imgsz 640 --batch 16 --device 0
 ## 评估
 
 ```bash
-yolo detect val model=models/smoking_person_yolo26n.pt data=Smoking_person.v3i.yolo26/data.yaml split=test
+yolo detect val model=models/smoking_person_yolo26n_v2.pt data=Smoking_person.v3i.yolo26/data.yaml split=test
 ```
+
+`models/` 下有两版权重,按训练先后保留,方便对比:
+
+| 权重 | 训练集 | valid mAP50-95 |
+| --- | --- | --- |
+| `smoking_person_yolo26n.pt` | 原始 5,307 张(无负样本) | 0.415 |
+| `smoking_person_yolo26n_v2.pt`(**推荐**) | 加上 805 张负样本背景图 | 0.425 |
+
+## 误判(假阳性)测试
+
+用 `detect_and_box.py` 在 `smokingVSnotsmoking/validation_data` 上分别跑 `smoking`/`notsmoking` 两组(各 200 张、有明确标签),量化"没有负样本会不会导致大量误判"这个问题:
+
+```bash
+python detect_and_box.py --source smokingVSnotsmoking/validation_data/smoking    --output test/smokingVSnotsmoking_boxed/smoking
+python detect_and_box.py --source smokingVSnotsmoking/validation_data/notsmoking --output test/smokingVSnotsmoking_boxed/notsmoking
+```
+
+| 模型 | smoking 召回(检出 Cigarette) | notsmoking 误判率(误检出 Cigarette) |
+| --- | --- | --- |
+| v1(无负样本) | 192/200 (96%) | 11/200 (5.5%) |
+| v2(加负样本后) | 192/200 (96%) | **4/200 (2%)** |
+
+结论:v1 确实存在"缺负样本→误判"的问题,典型误判场景是近景自拍(把眼睛框成 Cigarette)、打电话(手机贴近嘴边)、抬手比划手指——这些跟原数据集里"人 + 烟"的取景差异很大,模型没学过要排除它们。把 Kaggle `notsmoking` 图片当无标注背景图加入训练后,召回率不变,误判率下降了 63%。
+
+`detect_and_box.py` 用本仓库的模型同时检测 `Person` 和 `Cigarette`:Cigarette 画红框,离某个 Cigarette 最近的 Person 判定为"抽烟者"画橙框,其余 Person 画青色框。默认权重是 `models/smoking_person_yolo26n_v2.pt`,可用 `--weights` 换成别的权重对比效果。
 
 ## 目录结构
 
 ```
 .
 ├── train.py                       # 训练脚本
+├── detect_and_box.py              # 推理脚本:画出 Cigarette / 抽烟者 框
+├── tools/add_negative_samples.py  # 把负样本背景图合并进训练集
 ├── requirements.txt
 ├── models/                        # 最终训练好的权重(纳入版本控制)
-│   └── smoking_person_yolo26n.pt
+│   ├── smoking_person_yolo26n.pt
+│   └── smoking_person_yolo26n_v2.pt
 ├── Smoking_person.v3i.yolo26/     # 数据集(需自行下载,见上文,不纳入版本控制)
+├── smokingVSnotsmoking/           # 负样本来源 + 误判测试集(需自行下载,不纳入版本控制)
 └── runs/                          # 训练过程中的完整输出(不纳入版本控制)
 ```
 
