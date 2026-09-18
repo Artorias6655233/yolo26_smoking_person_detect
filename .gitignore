@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Dataset (large binary assets, not tracked in git — see README for download instructions)
+Smoking_person.v3i.yolo26/
+
+# Training artifacts
+runs/
+weights/
+*.pt
+*.onnx
+*.engine
+wandb/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
