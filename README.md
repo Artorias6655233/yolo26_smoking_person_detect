@@ -97,6 +97,17 @@ yolo detect val model=models/smoking_person_yolo26n.pt data=Smoking_person.v3i.y
 └── runs/                          # 训练过程中的完整输出(不纳入版本控制)
 ```
 
+## Qwen3-VL LoRA 微调数据集
+
+`Smoking_person.v3i.qwen3vl-lora/` 是本数据集自动转换出的另一份格式，用于 LoRA 微调
+`vllm/models/qwen3-vl-2b-gguf`，不修改原始 YOLO 数据。生成/更新：
+
+```bash
+python3 tools/convert_yolo_to_qwen3vl_lora.py
+```
+
+详见 [`Smoking_person.v3i.qwen3vl-lora/README.md`](Smoking_person.v3i.qwen3vl-lora/README.md)。
+
 ## 许可证
 
 - 本仓库代码采用 [MIT License](LICENSE)。

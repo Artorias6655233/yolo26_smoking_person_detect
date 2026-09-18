@@ -16,6 +16,10 @@ weights/
 *.onnx
 *.engine
 wandb/
+vllm/
+test/
+Smoking_person.v3i.qwen3vl-lora/
+smokingVSnotsmoking/
 
 # ...except the final selected checkpoints, which we do commit
 !models/
