@@ -23,7 +23,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--batch", type=int, default=16)
     parser.add_argument("--device", type=str, default="0", help="cuda device, e.g. '0' or 'cpu'")
     parser.add_argument("--patience", type=int, default=50, help="early stopping patience (epochs)")
-    parser.add_argument("--project", type=str, default="runs", help="root output dir; final path is <project>/detect/<name>")
+    parser.add_argument(
+        "--project", type=str, default="",
+        help="optional subfolder under runs/detect/; final path is runs/detect/<project>/<name> (leave empty for runs/detect/<name>)",
+    )
     parser.add_argument("--name", type=str, default="smoking_person_yolo26n")
     parser.add_argument("--resume", action="store_true", help="resume from the last checkpoint in --name run")
     return parser.parse_args()
