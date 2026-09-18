@@ -21,6 +21,8 @@ wandb/
 !models/
 !models/*.pt
 
+*.log
+
 # OS / editor
 .DS_Store
 Thumbs.db
