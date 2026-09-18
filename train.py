@@ -5,11 +5,13 @@ Example:
 """
 
 import argparse
+import shutil
 from pathlib import Path
 
 from ultralytics import YOLO
 
 DEFAULT_DATA = Path(__file__).parent / "Smoking_person.v3i.yolo26" / "data.yaml"
+MODELS_DIR = Path(__file__).parent / "models"
 
 
 def parse_args() -> argparse.Namespace:
@@ -41,6 +43,13 @@ def main() -> None:
         name=args.name,
         resume=args.resume,
     )
+
+    best = model.trainer.save_dir / "weights" / "best.pt"
+    if best.exists():
+        MODELS_DIR.mkdir(exist_ok=True)
+        dest = MODELS_DIR / f"{args.name}.pt"
+        shutil.copy2(best, dest)
+        print(f"Copied best checkpoint to {dest}")
 
 
 if __name__ == "__main__":

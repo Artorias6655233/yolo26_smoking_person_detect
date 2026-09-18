@@ -9,13 +9,17 @@ env/
 # Dataset (large binary assets, not tracked in git — see README for download instructions)
 Smoking_person.v3i.yolo26/
 
-# Training artifacts
+# Training artifacts (raw run logs/checkpoints — not tracked)
 runs/
 weights/
 *.pt
 *.onnx
 *.engine
 wandb/
+
+# ...except the final selected checkpoints, which we do commit
+!models/
+!models/*.pt
 
 # OS / editor
 .DS_Store

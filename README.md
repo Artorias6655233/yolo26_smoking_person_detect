@@ -77,14 +77,12 @@ python train.py --epochs 150 --imgsz 640 --batch 16 --device 0
 | `--patience` | 50 | early stopping 的容忍轮数 |
 | `--resume` | - | 从上次训练的 last checkpoint 继续 |
 
-训练日志、权重和可视化结果会保存在 `runs/detect/<name>/` 下(已加入 `.gitignore`,不会被提交)。
+训练过程中的完整日志、中间 checkpoint 和可视化结果会保存在 `runs/detect/<name>/` 下(体积较大,已加入 `.gitignore`,不会被提交)。训练结束后,`train.py` 会自动把最优权重 `best.pt` 复制一份到 `models/<name>.pt`——这个目录**会**被提交到 git,作为可复现、可直接下载使用的最终模型。
 
 ## 评估
 
-训练结束后,`runs/detect/<name>/weights/best.pt` 即为最优权重,可直接用 Ultralytics CLI 在测试集上评估:
-
 ```bash
-yolo detect val model=runs/detect/smoking_person_yolo26n/weights/best.pt data=Smoking_person.v3i.yolo26/data.yaml split=test
+yolo detect val model=models/smoking_person_yolo26n.pt data=Smoking_person.v3i.yolo26/data.yaml split=test
 ```
 
 ## 目录结构
@@ -93,8 +91,10 @@ yolo detect val model=runs/detect/smoking_person_yolo26n/weights/best.pt data=Sm
 .
 ├── train.py                       # 训练脚本
 ├── requirements.txt
+├── models/                        # 最终训练好的权重(纳入版本控制)
+│   └── smoking_person_yolo26n.pt
 ├── Smoking_person.v3i.yolo26/     # 数据集(需自行下载,见上文,不纳入版本控制)
-└── runs/                          # 训练输出(不纳入版本控制)
+└── runs/                          # 训练过程中的完整输出(不纳入版本控制)
 ```
 
 ## 许可证
