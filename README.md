@@ -99,12 +99,22 @@ python train.py --epochs 150 --imgsz 640 --batch 16 --device 0
 yolo detect val model=models/smoking_person_yolo26n_v2.pt data=Smoking_person.v3i.yolo26/data.yaml split=test
 ```
 
-`models/` 下有两版权重,按训练先后保留,方便对比:
+`models/` 下有三版权重,按训练先后保留,方便对比:
 
-| 权重 | 训练集 | valid mAP50-95 |
-| --- | --- | --- |
-| `smoking_person_yolo26n.pt` | 原始 5,307 张(无负样本) | 0.415 |
-| `smoking_person_yolo26n_v2.pt`(**推荐**) | 加上 805 张负样本背景图 | 0.425 |
+| 权重 | 模型规模 | 训练集 | valid mAP50-95 |
+| --- | --- | --- | --- |
+| `smoking_person_yolo26n.pt` | yolo26n | 原始 5,307 张(无负样本) | 0.415 |
+| `smoking_person_yolo26n_v2.pt` | yolo26n | 加上 805 张负样本背景图 | 0.425 |
+| `smoking_person_yolo26s.pt`(**推荐**) | yolo26s | 加上 805 张负样本背景图 | **0.451** |
+
+`yolo26s`(约 20MB,10.0M 参数)相比 `yolo26n`(约 5MB,2.4M 参数)体积大 4 倍左右,在同样的数据集、超参数(`epochs=150 --batch 16 --imgsz 640 --patience 50`)下训练,valid mAP50-95 从 0.425 提升到 0.451(+6%),但推理速度和显存占用也相应增加,按需在精度和延迟之间取舍。`yolo26s` 的最优权重出现在第 48 轮(patience=50 早停于第 98 轮),各类别的 valid 表现:
+
+| 类别 | Precision | Recall | mAP50 | mAP50-95 |
+| --- | --- | --- | --- | --- |
+| Cigarette | 0.763 | 0.867 | 0.852 | 0.507 |
+| Person | 0.938 | 0.899 | 0.952 | 0.699 |
+| Smoke | 0.644 | 0.452 | 0.524 | 0.279 |
+| Vape | 0.601 | 0.500 | 0.428 | 0.318 |
 
 ## 误判(假阳性)测试
 
@@ -135,7 +145,8 @@ python detect_and_box.py --source smokingVSnotsmoking/validation_data/notsmoking
 ├── requirements.txt
 ├── models/                        # 最终训练好的权重(纳入版本控制)
 │   ├── smoking_person_yolo26n.pt
-│   └── smoking_person_yolo26n_v2.pt
+│   ├── smoking_person_yolo26n_v2.pt
+│   └── smoking_person_yolo26s.pt
 ├── Smoking_person.v3i.yolo26/     # 数据集(需自行下载,见上文,不纳入版本控制)
 ├── smokingVSnotsmoking/           # 负样本来源 + 误判测试集(需自行下载,不纳入版本控制)
 └── runs/                          # 训练过程中的完整输出(不纳入版本控制)
