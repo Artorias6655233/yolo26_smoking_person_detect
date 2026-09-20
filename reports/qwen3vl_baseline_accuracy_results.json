@@ -1,0 +1,4022 @@
+{
+  "summary": {
+    "target": "是否有人吸烟",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "quantization": "4bit-nf4",
+    "n_total": 400,
+    "n_errors": 0,
+    "confusion_matrix": {
+      "tp": 200,
+      "fp": 16,
+      "tn": 184,
+      "fn": 0
+    },
+    "accuracy": 0.96,
+    "precision": 0.9259259259259259,
+    "recall": 1.0,
+    "f1": 0.9615384615384615,
+    "generated_at": "2026-09-18 17:45:42"
+  },
+  "results": [
+    {
+      "group": "smoking",
+      "file": "smoking_0008.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.55,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0013.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.15,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0025.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0028.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "女子手持香烟",
+      "latency_s": 5.18,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0031.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.11,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0037.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中人物正在吸烟",
+      "latency_s": 5.21,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0042.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.18,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0050.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.18,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0058.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟，正在吸烟",
+      "latency_s": 5.13,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0059.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.21,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0061.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.46,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0063.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.69,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0066.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.25,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0067.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0085.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.18,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0089.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人手持烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0096.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.18,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0107.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.38,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0115.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.09,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0121.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 4.55,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0123.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 4.83,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0135.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.27,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0140.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0145.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.16,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0149.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.15,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0150.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.33,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0164.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.99,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0165.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.01,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0167.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0169.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.34,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0183.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "女子手持烟",
+      "latency_s": 5.4,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0190.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中人物手持烟",
+      "latency_s": 5.55,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0191.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "女子叼着烟",
+      "latency_s": 5.25,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0197.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "女性在吸烟",
+      "latency_s": 5.07,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0202.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.1,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0205.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.16,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0213.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.11,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0217.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.15,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0230.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0232.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.01,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0241.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.26,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0250.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.12,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0256.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 5.01,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0261.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 4.11,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0263.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.13,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0266.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.98,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0273.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 4.94,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0276.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.96,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0282.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人嘴里叼着烟",
+      "latency_s": 5.03,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0284.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.09,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0292.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.03,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0295.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.12,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0296.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 4.95,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0300.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.0,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0305.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "女子手持香烟",
+      "latency_s": 5.11,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0308.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 4.99,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0334.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.96,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0347.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.08,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0355.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中人物正在吸烟",
+      "latency_s": 5.07,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0360.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人手持烟",
+      "latency_s": 5.04,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0363.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.04,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0364.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人手持烟",
+      "latency_s": 5.03,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0374.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.89,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0377.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.97,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0385.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.99,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0390.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 4.87,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0397.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 4.98,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0400.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.91,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0402.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 5.13,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0404.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.87,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0405.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.08,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0406.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.15,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0409.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.07,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0414.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.25,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0418.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 5.28,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0422.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.29,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0437.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.03,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0444.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持点燃的香烟",
+      "latency_s": 5.4,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0466.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 5.56,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0481.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 5.08,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0488.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人手持烟",
+      "latency_s": 5.22,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0503.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.22,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0508.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人手持烟",
+      "latency_s": 5.03,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0520.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子手持烟，正在吸烟",
+      "latency_s": 5.3,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0524.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 5.63,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0542.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.14,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0555.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 4.35,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0562.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.92,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0570.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.16,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0571.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中有人手持香烟",
+      "latency_s": 5.27,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0592.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.16,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0594.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吐烟雾",
+      "latency_s": 5.22,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0610.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.28,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0614.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.39,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0619.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.36,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0638.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中人物嘴里叼着烟",
+      "latency_s": 5.29,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0645.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.52,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0647.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.21,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0651.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 5.44,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0656.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.02,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0662.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人嘴里叼着烟",
+      "latency_s": 5.12,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0673.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.99,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0676.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.55,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0679.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.34,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0680.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.25,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0681.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "老人正在吸烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0683.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子手持烟",
+      "latency_s": 5.36,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0685.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 4.08,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0692.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.43,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0695.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0700.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.06,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0702.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.01,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0710.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.33,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0713.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 3.84,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0715.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.17,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0716.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.53,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0723.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中人物手持烟",
+      "latency_s": 5.14,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0747.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 4.46,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0752.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0754.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 5.29,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0764.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.11,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0772.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.38,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0783.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.14,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0788.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 4.11,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0802.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.07,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0819.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.23,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0827.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.08,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0830.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.29,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0834.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 4.06,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0838.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.27,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0841.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.24,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0843.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.25,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0845.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.03,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0846.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.46,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0849.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "女子手持香烟",
+      "latency_s": 5.08,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0858.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.3,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0859.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人吸烟",
+      "latency_s": 5.02,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0860.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟并吸烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0864.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.26,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0868.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 4.11,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0878.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.12,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0881.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中有人吸烟",
+      "latency_s": 5.11,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0894.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.72,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0902.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子手持香烟",
+      "latency_s": 5.2,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0903.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中人物正在吸烟",
+      "latency_s": 4.97,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0914.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 4.13,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0916.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 5.25,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0918.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.23,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0923.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 4.28,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0929.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "女孩手持香烟",
+      "latency_s": 4.67,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0934.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.41,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0937.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子手持烟",
+      "latency_s": 5.79,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0939.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.0,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0940.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 4.92,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0942.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 6.57,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0943.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.16,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0945.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.94,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0947.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.09,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0953.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中有人手持烟",
+      "latency_s": 4.04,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0970.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "女子手持烟",
+      "latency_s": 5.03,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0972.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 3.99,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0974.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持电子烟并吸烟",
+      "latency_s": 5.32,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0978.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 5.41,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0982.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.37,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0985.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.31,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0988.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 5.54,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0993.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.31,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0996.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.09,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_0998.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.18,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1000.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 6.64,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1004.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.26,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1005.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.15,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1009.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.82,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1024.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.04,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1027.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 4.94,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1030.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人手持烟",
+      "latency_s": 5.17,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1033.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "图中人物手持烟",
+      "latency_s": 5.27,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1034.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人叼着烟",
+      "latency_s": 5.24,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1035.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持电子烟并吸烟",
+      "latency_s": 5.4,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1042.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.17,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1044.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 6.59,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1054.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.08,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1057.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.17,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1059.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.08,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1062.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持电子烟",
+      "latency_s": 5.75,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1065.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.23,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1070.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 4.44,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1072.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 4.19,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1076.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持香烟",
+      "latency_s": 4.44,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1078.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人嘴里叼着烟",
+      "latency_s": 5.06,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1081.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.52,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1085.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持电子烟并吸烟",
+      "latency_s": 5.3,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1089.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.06,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1096.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人在吸烟",
+      "latency_s": 5.02,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1103.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 5.04,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1106.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 4.9,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1111.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 5.22,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1116.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在吸烟",
+      "latency_s": 4.87,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1121.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人手持烟",
+      "latency_s": 5.15,
+      "parse_error": null
+    },
+    {
+      "group": "smoking",
+      "file": "smoking_1126.jpg",
+      "gt": true,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人手持电子烟",
+      "latency_s": 5.25,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0028.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.76,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0031.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.48,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0033.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.53,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0048.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.56,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0054.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0064.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.45,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0069.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.9,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0070.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.55,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0091.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.47,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0092.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.59,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0110.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.9,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0112.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.66,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0113.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.78,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0119.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.38,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0132.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.55,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0138.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.51,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0145.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.62,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0152.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.54,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0153.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.42,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0160.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.35,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0164.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.75,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0167.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 4.91,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0170.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.82,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0172.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.81,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0173.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.51,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0179.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.55,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0181.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.47,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0184.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.39,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0199.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.64,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0207.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.38,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0209.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.43,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0212.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.61,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0218.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.42,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0233.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.67,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0238.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.54,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0240.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.51,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0246.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0254.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为或相关物品",
+      "latency_s": 1.61,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0259.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.81,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0268.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.82,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0278.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.47,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0279.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.56,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0281.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.53,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0283.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.6,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0294.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.35,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0295.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.42,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0296.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.42,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0300.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.42,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0307.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.66,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0309.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.72,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0318.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "画面中人物有烟雾冒出",
+      "latency_s": 5.22,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0338.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.57,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0339.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.53,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0345.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子嘴里叼着烟",
+      "latency_s": 5.14,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0349.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.56,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0353.JPG",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.54,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0355.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.97,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0362.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.56,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0367.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.41,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0371.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.43,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0377.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 3.52,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0384.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.92,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0385.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0394.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0396.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0406.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.9,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0426.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.39,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0431.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.81,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0432.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟，未持烟或手机，无吸烟行为",
+      "latency_s": 1.86,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0440.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.43,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0442.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.45,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0469.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.34,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0485.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.81,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0492.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.81,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0499.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.36,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0508.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.39,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0531.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "有人正在使用吸入器",
+      "latency_s": 5.75,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0532.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "老人手持蓝色吸入器",
+      "latency_s": 5.31,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0551.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.37,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0554.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.65,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0555.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.57,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0560.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.49,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0564.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.34,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0575.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.41,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0577.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.52,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0585.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.73,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0587.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.49,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0593.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.35,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0597.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.57,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0601.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.33,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0605.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.36,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0612.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.52,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0620.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 5.34,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0628.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0631.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.3,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0640.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吸烟",
+      "latency_s": 4.26,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0650.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在咳嗽",
+      "latency_s": 3.96,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0652.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男孩在咳嗽",
+      "latency_s": 5.31,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0669.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.49,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0680.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.69,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0691.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子用手捂住鼻子",
+      "latency_s": 5.64,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0700.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.43,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0704.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.47,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0707.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 3.58,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0708.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子正在咳嗽",
+      "latency_s": 4.93,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0709.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子正在咳嗽",
+      "latency_s": 4.12,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0712.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子正在咳嗽",
+      "latency_s": 4.37,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0717.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物正在咳嗽，未见吸烟行为",
+      "latency_s": 4.6,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0719.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子正在咳嗽，用手捂住口鼻",
+      "latency_s": 5.63,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0721.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子正在咳嗽",
+      "latency_s": 5.03,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0730.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.39,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0740.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物正在打喷嚏，未见吸烟行为",
+      "latency_s": 4.54,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0747.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子正在咳嗽",
+      "latency_s": 4.19,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0750.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "人正在吐痰",
+      "latency_s": 4.59,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0752.jpg",
+      "gt": false,
+      "pred": true,
+      "raw_found": true,
+      "conclusion": "男子正在咳嗽",
+      "latency_s": 5.07,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0767.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.54,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0769.JPG",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.92,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0773.JPG",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.7,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0775.JPG",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.3,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0776.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.56,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0777.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.57,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0784.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.38,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0791.JPG",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.39,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0798.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.35,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0802.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 3.79,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0805.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.65,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0813.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.61,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0814.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.34,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0816.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为或相关物品",
+      "latency_s": 1.48,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0823.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.62,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0825.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.6,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0837.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.37,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0839.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.54,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0849.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.54,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0856.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 3.46,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0860.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.37,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0861.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.59,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0872.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.44,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0877.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.83,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0882.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.34,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0890.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 3.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0896.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为或相关物品",
+      "latency_s": 1.63,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0898.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.51,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0899.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.58,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0903.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.66,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0907.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.53,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0912.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.3,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0917.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.65,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0920.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.84,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0923.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.54,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0925.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.72,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0926.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.9,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0931.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 3.64,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0934.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.53,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0936.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.57,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0937.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.64,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0941.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0944.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.81,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0945.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.41,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0946.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为或相关物品",
+      "latency_s": 1.72,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0955.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.37,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0958.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.39,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0961.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.51,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0962.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.43,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0965.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.46,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0968.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 1.41,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0969.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.45,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0971.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.37,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0973.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.4,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0976.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.49,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0981.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.72,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0984.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.51,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0988.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.55,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0993.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.33,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0995.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 3.43,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_0998.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.82,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1000.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.89,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1001.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.59,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1002.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.42,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1004.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.32,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1006.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.38,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1018.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.71,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1021.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.53,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1023.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.82,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1030.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 1.45,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1032.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.34,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1035.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.34,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1037.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟",
+      "latency_s": 3.32,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1042.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.65,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1044.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无人吸烟",
+      "latency_s": 1.43,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1049.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未吸烟，无相关物品或动作",
+      "latency_s": 1.89,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1056.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 1.51,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1057.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.85,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1065.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中无吸烟行为",
+      "latency_s": 1.33,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1071.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.47,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1079.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.82,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1081.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中人物未见吸烟行为",
+      "latency_s": 3.63,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1082.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": null,
+      "latency_s": 0.82,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1088.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为或相关物品",
+      "latency_s": 1.53,
+      "parse_error": null
+    },
+    {
+      "group": "notsmoking",
+      "file": "notsmoking_1094.jpg",
+      "gt": false,
+      "pred": false,
+      "raw_found": false,
+      "conclusion": "图中未见吸烟行为",
+      "latency_s": 3.46,
+      "parse_error": null
+    }
+  ]
+}

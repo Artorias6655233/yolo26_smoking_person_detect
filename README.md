@@ -130,6 +130,7 @@ python detect_and_box.py --source smokingVSnotsmoking/validation_data/notsmoking
 .
 ├── train.py                       # 训练脚本
 ├── detect_and_box.py              # 推理脚本:画出 Cigarette / 抽烟者 框
+├── yolo_server/                   # HTTP 检测服务(FastAPI),见 yolo_server/README.md
 ├── tools/add_negative_samples.py  # 把负样本背景图合并进训练集
 ├── requirements.txt
 ├── models/                        # 最终训练好的权重(纳入版本控制)
@@ -138,6 +139,18 @@ python detect_and_box.py --source smokingVSnotsmoking/validation_data/notsmoking
 ├── Smoking_person.v3i.yolo26/     # 数据集(需自行下载,见上文,不纳入版本控制)
 ├── smokingVSnotsmoking/           # 负样本来源 + 误判测试集(需自行下载,不纳入版本控制)
 └── runs/                          # 训练过程中的完整输出(不纳入版本控制)
+```
+
+## HTTP 检测服务
+
+`yolo_server/server.py` 把 `models/*.pt` 包装成一个 FastAPI 服务：POST 图片
+(本地路径/base64/URL/文件上传)，返回吸烟检测结果 + 标注图。详见
+[`yolo_server/README.md`](yolo_server/README.md)。
+
+```bash
+python yolo_server/server.py
+curl -X POST http://localhost:9998/detect -H 'Content-Type: application/json' \
+  -d '{"image_path": "test/webImage/1.jpg"}'
 ```
 
 ## Qwen3-VL LoRA 微调数据集

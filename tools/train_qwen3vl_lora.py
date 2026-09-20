@@ -90,7 +90,8 @@ def gpu_free_mib():
         return None
 
 
-MIN_FREE_MIB = 1500  # abort threshold: leave real headroom for the YOLO job / desktop
+MIN_FREE_MIB = 800  # abort threshold. No concurrent GPU job anymore (YOLO finished) --
+# this just guards against a genuine OOM, not a shared-GPU budget.
 
 
 def load_jsonl(path):
@@ -289,8 +290,16 @@ def main():
     trainable_params = [p for p in model.parameters() if p.requires_grad]
     try:
         import bitsandbytes as bnb
-        optimizer = bnb.optim.PagedAdamW8bit(trainable_params, lr=args.lr)
-        log("using PagedAdamW8bit optimizer")
+        # Deliberately NOT PagedAdamW8bit: paged bnb optimizers use CUDA
+        # unified-memory paging (cudaMallocManaged), which is known-unstable
+        # under Windows' WDDM driver model. Measured 2026-09-18/20: two
+        # separate full GPU-driver crashes ("CUDA error: unknown error" /
+        # "illegal memory access" -> device lost, reboot required), both
+        # while using PagedAdamW8bit, both with several GB of free VRAM at
+        # the time (not an OOM -- a driver-level fault). Plain AdamW8bit
+        # keeps the 8-bit memory savings without the paging.
+        optimizer = bnb.optim.AdamW8bit(trainable_params, lr=args.lr)
+        log("using AdamW8bit optimizer (non-paged -- see comment above)")
     except Exception as e:
         log(f"falling back to torch.optim.AdamW ({e})")
         optimizer = torch.optim.AdamW(trainable_params, lr=args.lr)
@@ -347,14 +356,19 @@ def main():
                 log(f"[warn] skipping example {rec.get('images')}: {e}")
                 continue
             finally:
-                # Checked and cleared after EVERY micro-batch, not just every
-                # optimizer step: real images vary wildly in resolution, so
-                # reserved-but-fragmented memory (and real free VRAM) can
-                # swing a lot within a single accumulation window. Measured
-                # 2026-09-18: checking/clearing only once per optimizer step
-                # (every grad-accum micro-batches) let real system-wide free
-                # VRAM crash from ~2.3GB to ~0.4GB *within* one window before
-                # the end-of-step check ever ran -- this is the fix.
+                # Restored per-micro-batch empty_cache(): removing it (tried
+                # 2026-09-20) was wrong -- without it, real images' wildly
+                # varying resolutions fragment the allocator badly enough
+                # within a single grad-accum window that free VRAM crashed
+                # from ~8.6GB to ~1.2GB in well under one window, tripping
+                # the safety abort almost immediately (a clean self-stop, not
+                # a driver crash -- GPU was fine afterwards). So this call is
+                # necessary. Two earlier full GPU-driver crashes (2026-09-18,
+                # 2026-09-20 -- "CUDA error"/"illegal memory access" inside
+                # this exact call, device lost, reboot required) are now
+                # attributed to bnb's PagedAdamW8bit (unstable CUDA
+                # unified-memory paging under WDDM), swapped for plain
+                # AdamW8bit above -- not to empty_cache() itself.
                 torch.cuda.empty_cache()
                 free_mib = gpu_free_mib()
                 if free_mib is not None and free_mib < MIN_FREE_MIB:
